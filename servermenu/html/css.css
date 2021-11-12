@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+  
+
+body{
+    display: flex;
+	justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.prijavabuga {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+    width: 950;
+    height: 450;
+    border-radius: 2%;
+    background-image: url("slike/background2.png");
+    display: none;
+}
+
+.prijava-igraca{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+    width: 950;
+    height: 450;
+    border-radius: 2%;
+    background-image: url("slike/background2.png");
+    display: none;
+}
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+    width: 500;
+    height: 500;
+    border-radius: 2%;
+    background-image: url('slike/background.png');
+    top: 50%;
+    left: 50%;
+display: none;
+}
+.prijedlozi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+    width: 950;
+    height: 450;
+    border-radius: 2%;
+    background-image: url("slike/background2.png");
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #153063;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+    transition: 0.2ms;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #023fb1;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    resize: initial;
+  }
+  
+  input:nth-of-type(1), input:nth-of-type(2) {
+    display: inline;
+    width: 49%;
+  }
+  
+  input[type=button] {
+    display: inline-block;
+    outline: 0;
+    background: #eb3434;
+    width: 27%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-left: 35%;
+    margin-top: 0.5%;
+    border-radius: 5%;
+  }
+  input[type=button]:hover {
+    background: #38c738;
+  }
+
+
+.naslov{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+}
+
+.nazad-img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.nazad-img:hover{
+    cursor: pointer;
+}
+
+.close-img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.close-img:hover{
+    cursor: pointer;
+}
+
+.prijavabugabtn {
+	font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    height: 50px;
+    transition: 0.5s;
+    background-color: rgb(21, 59, 107);
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	color:white;
+	transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+}
+
+
+.prijavabugabtn:hover{
+    opacity: 0.7;
+}
+
+.prijedlozibtn {
+	font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    height: 50px;
+    transition: 0.5s;
+    background-color: rgb(21, 59, 107);
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	color:white;
+	transition: 0.2s;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+}
+.prijedlozibtn:hover{
+    opacity: 0.7;
+}
+
+.prijaviigracabtn{
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    height: 50px;
+    transition: 0.5s;
+    background-color: rgb(21, 59, 107);
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	color:white;
+	transition: 0.2s;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+}
+
+.prijaviigracabtn:hover{
+    opacity: 0.7;
+}
+
+.donlista {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10% 26%;	
+    width: 850;
+    height: 350;
+    padding-left: -1%;
+    border: 5px solid rgb(97, 6, 6);
+    border-radius: 35px;
+    background:rgb(117, 7, 7);
+	display:none;
+}
+
+.ugasi {
+    right:2%;
+    font-size:30px;
+    top:2%;
+    float:right;
+}
+
+.infoigraca{
+    position: absolute;
+    bottom: 15%;
+    left: 16%;
+}
+
+.dugme{
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    height: 50px;
+    transition: 0.5s;
+    background-color: rgb(21, 59, 107);
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	color:white;
+	transition: 0.2s;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dugme:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.tekst {
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topbar {
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	font-size: 28px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inputtarget{
+    width: 15em;
+    height: 5em;
+    position: absolute;
+    background-color: rgba(2,7,23,255);
+    color: white;
+    border-radius: 7%;
+    color:#ffffff;
+    position: fixed;
+    top: 60%;
+    left: 5%;
+    border: 0;
+    color: white;
+    box-shadow: none;
+    box-decoration-break:unset;
+}
+.input {
+    width: 15em;
+    height: 5em;
+    position: absolute;
+    background-color: rgba(2,7,23,255);
+    color: white;
+    border-radius: 7%;
+    color:#ffffff;
+    position: fixed;
+    top: 36%;
+    left: 5%;
+    border: 0;
+    color: white;
+    box-shadow: none;
+    box-decoration-break:unset;
+}
+
+.label {
+	font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: fixed;
+    top: 26%;
+    left: 5%;
+}
+
+
+.labeltargetone {
+	font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: fixed;
+    top: 55%;
+    left: 5%;
+}
+
+.label1{
+	font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    margin-top: -0.5%; 
+
+}
+
+
+.label2{
+	font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    padding-left: 40%;
+}
+
+.label3{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    bottom: 65%;
+    right: 34%;
+}
+.label4{
+	font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+}
+
+.why{
+	font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    width: 30em;
+    height: 10em;
+    border: 0;
+    background-color: rgba(0,3,13,255);
+    border: #023fb1;
+    color: white;
+    box-shadow: none;
+    box-decoration-break:unset;
+    border-radius: 5%;
+    color:#ffffff;
+    top: 39%;
+    left: 54%;
+}
+
+.prijedlogtext{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    width: 30em;
+    height: 10em;
+    border: 0;
+    background-color: rgba(0,3,13,255);
+    color: white;
+    box-shadow: none;
+    box-decoration-break:unset;
+    border-radius: 5%;
+    color:#ffffff;
+    top: 39%;
+    left: 54%;
+}
+.prijavatext{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    width: 30em;
+    height: 10em;
+    border: 0;
+    background-color: rgba(0,3,13,255);
+    color: white;
+    box-shadow: none;
+    box-decoration-break:unset;
+    border-radius: 5%;
+    color:#ffffff;
+    top: 39%;
+    left: 54%;
+}
+.gender{
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    width: 34%;
+    height: 2.8em;
+    background-color: rgba(2,7,23,255);
+    color: white;
+    border: 1px solid #df292a;
+
+}
+.sumbit{
+    position: fixed;
+    width:140px;
+    height: auto;
+    margin: 0;
+	font-size:15px;    
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
+    font-size: 15px;
+	color:#000000;
+    
+
+}
+
+
+.warn{
+    color: #df292a;
+	font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    margin-top: 4%;
+
+}
+
+.thanks{
+    color: #df292a;
+	font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+
+
+}
+
+
+.logoo {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+}

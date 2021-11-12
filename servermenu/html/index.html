@@ -1,0 +1,76 @@
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<title></title>
+<div class="container">
+	<a class="naslov">Server Menu</a>
+	<img src="slike/delete.png" class="close-img" onclick="zatvoricontainer()">
+	<button onclick="prijavabuga()" class="prijavabugabtn">Report Bug</button>
+	<button onclick="prijedlozi()" class="prijedlozibtn">Suggest</button>
+	<button onclick="prijavaigraca()" class="prijaviigracabtn">Report Player</button>
+</div>
+    <div class="prijavabuga">
+    		<div class="topbar">
+    			<p>Report Bug</p>
+    		</div>
+    		<img src="slike/back.png" class="nazad-img" onclick="vratisenazad()">
+    		<div class="tekst">If you have noticed a bug on the server, fill out this form and explain what the problem is</div>
+    		<div class="infoigraca">
+    		<label class="label">Name on discord and tag:</label>
+			<textarea class="input" name="description" id="discordime" rows="8" cols="26" placeholder="Type"></textarea>
+    		</div>
+    		<div class="detaljibugaxd">		
+    			<label class="label3">Bug details:</label>
+				<textarea class="why" name="description" id="why" rows="8" cols="80" placeholder="Type bug"></textarea>
+    		</div>
+    
+    		<button type="button" onclick="dugmesend()" class="dugme">Send</button>
+    </div>
+	<div class="prijedlozi">
+		<div class="topbar">
+			<p>Suggestions</p>
+		</div>
+		<img src="slike/back.png" class="nazad-img" onclick="vratisenazadprijedlozi()">
+		<div class="tekst">If you have a suggestion for the server, fill out the form!</div>
+		<div class="infoigraca">
+		<label class="label">Name on discord and tag:</label>
+		<textarea class="input" name="description" id="discordimeprijedloga" rows="8" cols="26" placeholder="Type"></textarea>
+		</div>
+		<div class="detaljibugaxd">		
+			<label class="label3">Suggestion:</label>
+			<textarea class="prijedlogtext" name="description" id="prijedlogtext" rows="8" cols="80" placeholder="Enter suggestion here"></textarea>
+		</div>
+
+		<button type="button" onclick="posaljiprijedlog()" class="dugme">Send</button>
+	</div>
+	<div class="prijava-igraca">
+		<div class="topbar">
+			<p>Report Player</p>
+		</div>
+		<img src="slike/back.png" class="nazad-img" onclick="vratisenazadprijavaigraca()">
+		<div class="tekst">Fill out the report player form, i.e. the player application form. Report a foul to someone the player did!</div>
+		<div class="infoigraca">
+		<label class="label">Your Name on discord and tag:</label>
+		<textarea class="input" name="description" id="discordimeprijaveigraca" rows="8" cols="26" placeholder="Type"></textarea>
+		</div>
+		<div class="infoigracatarget">
+			<label class="labeltargetone">Discord player name and tag you want to report:</label>
+			<textarea class="inputtarget" name="description" id="discordimeprijaveigracatarget" rows="8" cols="26" placeholder="Type"></textarea>
+			</div>
+		<div class="detaljibugaxd">		
+			<label class="label3">Fail Descriptions:</label>
+			<textarea class="prijavatext" name="description" id="prijavatext" rows="8" cols="80" placeholder="Fail Descriptions"></textarea>
+		</div>
+
+		<button type="button" onclick="posaljiprijavuigraca()" class="dugme">Send Report</button>
+	</div>
+</body>
+<link rel="stylesheet" href="css.css">
+<script src="https://kit.fontawesome.com/2c6d98e4c3.js" crossorigin="anonymous"></script>
+<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+<script src="javascript/jos-neki-js.js" type="text/javascript"></script>
+<script src = "javascript/js.js"></script>
+<script src="https://kit.fontawesome.com/43e3623ae3.js" crossorigin="anonymous"></script>
+<head>
+</head>
+</html>
