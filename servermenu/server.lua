@@ -1,3 +1,8 @@
+ESX = nil
+
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
+
 local attempts = {}
 
 RegisterNetEvent("posalji:bugreport")
